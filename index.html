@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Exercises 4.3–4.7 – D3 Bar Chart | COS30045</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap"
+    />
+    <link rel="icon" href="img/PowerIcon.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../demo2/index.html">
+          <img src="img/PowerIcon.png" alt="" width="40" height="40" />
+          <span>Appliance Energy<small>COS30045 Demonstration 2</small></span>
+        </a>
+        <nav class="site-nav" aria-label="Exercises">
+          <ul>
+            <li><a href="../demo2/index.html">Home</a></li>
+            <li>
+              <a href="../dv-03-svg-exercise/index.html">4.1 SVG House</a>
+            </li>
+            <li>
+              <a
+                href="../dv-04-bar-chart-exercise/index.html"
+                aria-current="page"
+                >4.3–4.7 Bar Chart</a
+              >
+            </li>
+            <li>
+              <a href="../dv-05-multichart-webpage/index.html">5 Multi-chart</a>
+            </li>
+            <li>
+              <a href="../dv-06-interactivity/index.html">6 Interactivity</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="container">
+      <span class="badge">Exercises 4.3&ndash;4.7 &middot; D3 bar chart</span>
+      <h1>Televisions on the Australian market</h1>
+      <p class="lead">
+        Which brands register the most TV models? This chart replaces the static
+        KNIME image on my Week 0–3 Appliance Energy website with a chart drawn
+        by D3 from a CSV file (Exercises 4.3 to 4.7).
+      </p>
+
+      <!-- ===== Exercises 4.3–4.7: the bar chart ===== -->
+      <section class="card" aria-labelledby="chart-title">
+        <h2 id="chart-title">
+          Samsung, Kogan and LG register the most TV models
+        </h2>
+        <p>
+          Number of TV models registered per brand (brands with 20 or more
+          models), sorted from most to fewest. The dashed line shows the
+          average.
+        </p>
+
+        <!-- 4.3 – svg goes here -->
+        <div class="responsive-svg-container bar-chart"></div>
+
+        <p class="source">
+          Data: Australian Government Energy Rating TV registrations (Feb 2026
+          extract), grouped by brand in KNIME and exported as
+          <code>data/tvBrandCount.csv</code>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; 2026 Chung Hien Thong (106212681) &middot; COS30045 Data
+          Visualisation, Swinburne University of Technology.
+        </p>
+      </div>
+    </footer>
+
+    <!-- D3 first, then main.js -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
